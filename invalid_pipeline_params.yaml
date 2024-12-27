@@ -1,0 +1,11 @@
+pipeline:
+  - name: cleaner
+    type: TextCleaner
+
+  - name: generator
+    type: TextGenerator
+    params:
+      min_length: 12
+
+  - name: sentiment
+    type: SentimentAnalyzer

@@ -1,0 +1,9 @@
+pipeline:
+  - name: cleaner
+    type: TextCleaner
+
+  - name: sentiment
+    type: SentimentAnalyzer
+
+  - name: aggregator
+    type: TextAggregator
